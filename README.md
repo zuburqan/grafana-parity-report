@@ -28,7 +28,7 @@ On defining equations like above one can set multiple thresholds on accepted per
 
 ## Compatibility
 
-This panel should work with the following data sources: [Graphite](https://grafana.net/plugins/graphite).
+This panel should work will work with [Graphite](https://grafana.net/plugins/graphite).
 
 ## Development
 
