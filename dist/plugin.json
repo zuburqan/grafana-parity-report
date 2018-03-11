@@ -1,0 +1,32 @@
+{
+  "type": "panel",
+  "name": "Parity Report",
+  "id": "btplc-parity-report-panel",
+
+  "info": {
+    "version": "0.0.1",
+    "description": "Parity report plugin to compare metrics",
+    "author": {
+      "name": "BT Plc",
+      "url": "https://bt.com"
+    },
+    "keywords": ["parity", "report", "panel"],
+    "links": [
+      {"name": "MIT Licence", "url": ""},
+      {"name": "Project Site", "url": ""}
+    ],
+    "screenshots": [
+      {"name": "", "path": ""},
+      {"name": "", "path": ""}
+    ],
+    "logos": {
+      "small": "img/logo.jpg",
+      "large": "img/logo.jpg"
+    }
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
