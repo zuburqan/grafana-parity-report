@@ -2,7 +2,7 @@
 
 A parity report panel for [Grafana](http://grafana.org/).
 
-![Parity Report Panel](https://raw.githubusercontent.com/BTplc/grafana-parity-report/master/src/img/parity_report.png)
+![Parity Report Panel](https://raw.githubusercontent.com/zuburqan/grafana-parity-report/master/src/img/parity_report.png)
 
 ## Overview
 
@@ -28,7 +28,7 @@ On defining equations like above one can set multiple thresholds on accepted per
 
 ## Compatibility
 
-This panel should work with the following data sources: [Graphite](https://grafana.net/plugins/graphite).
+This panel should work will work with [Graphite](https://grafana.net/plugins/graphite).
 
 ## Development
 
