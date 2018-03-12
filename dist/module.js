@@ -73,7 +73,7 @@ var ParityReportCtrl = exports.ParityReportCtrl = function (_MetricsPanelCtrl) {
   _createClass(ParityReportCtrl, [{
     key: 'onInitEditMode',
     value: function onInitEditMode() {
-      this.addEditorTab('Options', 'public/plugins/btplc-parity-report-panel/editor.html');
+      this.addEditorTab('Options', 'public/plugins/parity-report-panel/editor.html');
       this.unitFormats = _kbn2.default.getUnitFormats();
       this.render();
     }

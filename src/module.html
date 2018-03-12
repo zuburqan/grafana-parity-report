@@ -1,35 +1,35 @@
 <div class="table-panel-container">
 	<div class="table-panel-header-bg"></div>
 	<div class="table-panel-scroll">
-		<table class="report", border="1">
+		<table class="report", border="1", style="width: 100%">
 			<tr>
-				<th>
+				<th style="border: 3px solid black">
 					<div class="table-panel-table-header-inner pointer">
 						<span ng-click='ctrl.onColumnClick("name")'>
 							Name &nbsp;&nbsp; <i ng-class="ctrl.sortIcon('name')" />
 						</span>
 					</div>
-        </th>
-				<th>
+				</th>
+				<th style="border: 3px solid black">
 					<div class="table-panel-table-header-inner pointer">
 						<span ng-click='ctrl.onColumnClick("difference")'>
-              Difference &nbsp;&nbsp; <i ng-class="ctrl.sortIcon('difference')" />
+							Difference &nbsp;&nbsp; <i ng-class="ctrl.sortIcon('difference')" />
 						</span>
 					</div>
 				</th>
-				<th>
+				<th style="border: 3px solid black">
 					<div class="table-panel-table-header-inner">
 						Equation
 					</div>
 				</th>
-				</tr>
-					<tr ng-repeat="check in ctrl.report" style={{check.color}}>
-						<td class="td">{{check.name}}</td>
-						<td class="td">{{check.difference}}%</td>
-						<td class="td">{{check.equation}}</td>
-				</tr>
-				</table>
-			</div>
-		</div>
-	<div class="table-panel-footer">
+			</tr>
+			<tr ng-repeat="check in ctrl.report" style={{check.color}}>
+				<td style="height: 5px; vertical-align: bottom; padding: 5px; border: 3px solid black">{{check.name}}</td>
+				<td style="height: 5px; vertical-align: bottom; padding: 5px; border: 3px solid black">{{check.difference}}%</td>
+				<td style="height: 5px; vertical-align: bottom; padding: 5px; border: 3px solid black">{{check.equation}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="table-panel-footer">
 </div>
