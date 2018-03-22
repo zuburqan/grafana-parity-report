@@ -34,7 +34,7 @@ export class ParityReportCtrl extends MetricsPanelCtrl {
   }
 
   onInitEditMode () {
-    this.addEditorTab('Options', 'public/plugins/parity-report-panel/editor.html')
+    this.addEditorTab('Options', 'public/plugins/zuburqan-parity-report-panel/editor.html')
     this.unitFormats = kbn.getUnitFormats()
     this.render()
   }
