@@ -6,7 +6,7 @@ A parity report panel for [Grafana](http://grafana.org/).
 
 ## Overview
 
-This panel shows a parity report for series. The report can have multiple checks where each check is expressed as an equation having series reduced to a representative value by means of [mathjs](http://mathjs.org/docs/reference/functions.html) functions along with two extra functions supported by this plugin, namely:
+This panel shows a parity report for multiple series. A report is represented as a table with rows. Each row shows a custom check expressed as an equation having the series data reduced to a representative value by means of [mathjs](http://mathjs.org/docs/reference/functions.html) functions along with two extra functions supported by this plugin, namely:
 
     # gives the first datapoint in the series
     first()
@@ -14,7 +14,19 @@ This panel shows a parity report for series. The report can have multiple checks
     # gives the last datapoint in the series
     last()
 
-Each of these functions takes an alias name genereated by the 'alias()' graphite function for queries under the metrics tab. A few example of queries having aliases as A, B and C are:
+Each of these functions takes an alias name genereated by the 'alias()' graphite function for queries under the metrics tab. An example of queries having aliases as A, B and C is shown below:
+
+![Parity Report Metrics Tab](https://raw.githubusercontent.com/zuburqan/grafana-parity-report/master/src/img/parity_report_metrics.png)
+
+    alias(test.network.toplevel.traffic.incoming.rate, 'A')
+
+    alias(test.network.toplevel.traffic.outgoing.route1.rate, 'B')
+
+    alias(test.network.toplevel.traffic.outgoing.route2.rate, 'C')
+
+These queries can then be used in the custom checks expressed as equations and referred by their aliases A, B and C.
+
+![Parity Report Options Tab](https://raw.githubusercontent.com/zuburqan/grafana-parity-report/master/src/img/parity_report_options.png)
 
     max(A) + min(B) = mean(C) * 2
 

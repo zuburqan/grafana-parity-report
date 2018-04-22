@@ -17,6 +17,7 @@
     ],
     "screenshots": [
       {"name": "Parity Report", "path": "img/parity_report.png"},
+      {"name": "Parity Report Metrics", "path": "img/parity_report_metrics.png"}
       {"name": "Parity Report Options", "path": "img/parity_report_options.png"}
     ],
     "logos": {
