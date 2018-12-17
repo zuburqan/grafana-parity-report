@@ -24,6 +24,30 @@ Each of these functions takes an alias name genereated by the 'alias()' graphite
 
     alias(test.network.toplevel.traffic.outgoing.route2.rate, 'C')
 
+By default the plugin looks for "target" as the key in the JSON response but it can be changed through the Alias Key field under the options tab. The JSON response from the datasource should be of the following format (with "target" or some other key specified through Alias Key field)
+
+```
+[
+  {
+    "target":"A",
+    "datapoints":[
+      [100,1450754160000],
+      [102,1450754210000],
+      ...
+    ]
+  },
+  {
+    "target":"B",
+    "datapoints":[
+      [50,1450754160000],
+      [52,1450754210000],
+      ...
+    ]
+  },
+  ...
+]
+```
+
 These queries can then be used in the custom checks expressed as equations and referred by their aliases A, B and C.
 
 ![Parity Report Options Tab](https://raw.githubusercontent.com/zuburqan/grafana-parity-report/master/src/img/parity_report_options.png)
