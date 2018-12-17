@@ -44,7 +44,8 @@ var panelDefaults = {
   format: 'none',
   decimals: 2,
   sortColumn: '',
-  sortMultiplier: 1
+  sortMultiplier: 1,
+  alias: 'target'
 };
 
 var ParityReportCtrl = exports.ParityReportCtrl = function (_MetricsPanelCtrl) {

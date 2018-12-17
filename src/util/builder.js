@@ -15,7 +15,7 @@ export class Builder {
 
   _targetToSeriesMapping (seriesList) {
     _.forEach(seriesList, (series) => {
-      this.scope[series.target] = this._values(this._cleanup(series))
+      this.scope[series[this.options.alias]] = this._values(this._cleanup(series))
     })
   }
 
