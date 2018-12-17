@@ -48,7 +48,7 @@ var Builder = exports.Builder = function () {
       var _this2 = this;
 
       _lodash2.default.forEach(seriesList, function (series) {
-        _this2.scope[series.target] = _this2._values(_this2._cleanup(series));
+        _this2.scope[series[_this2.options.alias]] = _this2._values(_this2._cleanup(series));
       });
     }
   }, {
