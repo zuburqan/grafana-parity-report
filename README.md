@@ -62,6 +62,8 @@ These queries can then be used in the custom checks expressed as equations and r
 
 On defining equations like above one can set multiple thresholds on accepted percentage difference between LHS and RHS of the equation, the breach of which can be shown in the parity report table as different colors set against the thresholds. The report also shows the percentage difference with configurable precision.
 
+### THE NAME OF THE ALIASES SHOULD BE VALID JAVASCRIPT VARIABLES NAMES
+
 ## Compatibility
 
 This panel should work will work with [Graphite](https://grafana.net/plugins/graphite).
