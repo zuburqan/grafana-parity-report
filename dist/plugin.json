@@ -4,7 +4,7 @@
   "id": "zuburqan-parity-report-panel",
 
   "info": {
-    "version": "1.0.1",
+    "version": "1.2.0",
     "description": "Parity report plugin to compare metrics",
     "author": {
       "name": "Zuburqan Khan",
